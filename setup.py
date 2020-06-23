@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
     name='django-dev-urls',
-    version='2020.6.4',
+    version='2020.6.5',
     packages=[
         'django_dev_urls',
     ],
