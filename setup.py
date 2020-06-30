@@ -1,13 +1,7 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+import setuptools
 
-
-setup(
+setuptools.setup(
     name='django-dev-urls',
-    version='2020.6.5',
-    packages=[
-        'django_dev_urls',
-    ],
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )
